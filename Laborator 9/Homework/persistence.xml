@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+    <persistence-unit name="ExamplePU" transaction-type="RESOURCE_LOCAL">
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+
+        <properties>
+            <!-- JPA provider-specific properties -->
+            <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver" />
+
+            <property name="hibernate.jdbc.batch_size" value="100" />
+            <!-- Dialect for Oracle -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle12cDialect" />
+
+            <!-- Other properties for hibernate -->
+            <!-- <property name="hibernate.connection.provider_class" value="org.hibernate.hikaricp.internal.HikariCPConnectionProvider" /> -->
+
+            <!-- Other properties for Oracle -->
+            <property name="hibernate.show_sql" value="false" />
+            <property name="hibernate.format_sql" value="true" />
+            <property name="hibernate.hbm2ddl.auto" value="none" />
+
+            <!-- JDBC properties -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:xe" />
+            <property name="javax.persistence.jdbc.user" value="Student" />
+            <property name="javax.persistence.jdbc.password" value="STUDENT" />
+
+
+
+
+        </properties>
+    </persistence-unit>
+</persistence>
