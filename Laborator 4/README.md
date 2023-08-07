@@ -27,4 +27,4 @@ The maximum cardinality matching should be: {S0-P2, S1-P1, S2-P0}.
 
 ---
 
-Feel free to use this content as a basis for your repository's README and adjust it to match your specific project details and style preferences.
+ 
