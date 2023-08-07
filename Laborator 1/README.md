@@ -1,6 +1,6 @@
 # Laborator 1
 - **Compulsory (1p)**
-  1. Write a Java application that implements the following operations:
+ Write a Java application that implements the following operations:
      - Display on the screen the message "Hello World!". Run the application. If it works, go to step 2 :)
      - Define an array of strings languages, containing {"C", "C++", "C#", "Python", "Go", "Rust", "JavaScript", "PHP", "Swift", "Java"}
      - Generate a random integer n: int n = (int) (Math.random() * 1_000_000);
